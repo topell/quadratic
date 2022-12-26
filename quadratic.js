@@ -15,7 +15,7 @@ function getA() {
   };
   arr.reverse();
   if (arr[0] === undefined || 0) {
-    alert('Уравнение, которое вы ввели, недостаточно квадратное');
+    a = 0;
       } else {
   a = parseInt(arr[0]);                 // здесь можно использовать аргумент
   if (!isFinite(a)) a = 1;
@@ -57,6 +57,9 @@ function getC() {
 alert([a, b, c]);
 
 function getResult() {
+  if (a == 0) {
+    result = 'Уравнение, которое вы ввели, недостаточно квадратное';
+  } else {
   let result1;
   let result2;
   let discr = b ** 2 - ( 4 * a * c);
@@ -69,6 +72,7 @@ function getResult() {
     result = [result1, result2];
   } else {
     result = -b / 2 * a;
+  }
   };
   alert(`Ответ:  x = ${result} `);
 
