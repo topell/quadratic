@@ -15,7 +15,7 @@ function getA() {
   };
   arr.reverse();
   if (arr[0] === undefined || 0) {
-    a = 0;
+    alert('Уравнение, которое вы ввели, недостаточно квадратное');
       } else {
   a = parseInt(arr[0]);                 // здесь можно использовать аргумент
   if (!isFinite(a)) a = 1;
